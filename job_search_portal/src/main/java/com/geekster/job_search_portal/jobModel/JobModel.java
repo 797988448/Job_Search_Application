@@ -17,6 +17,7 @@ import java.time.LocalDate;
 public class JobModel {
     @Id
     private Long id;
+    private String someField;
     @NotBlank(message = "Title is required")
     private String title;
 

@@ -32,5 +32,15 @@ public class JobController {
     return jobService.DeleteId(id);
     }
 
+    @PutMapping("updateCompanyName/Id/{id}")
+    public String updateCompanyNameByTypes(@PathVariable Long id ,@RequestParam String companyName){
+        return jobService.updateCompanyNameByTypes(id,companyName);
+
+    }
+    @DeleteMapping("DeleteById/Id/{id}")
+    public String DeleteById(@PathVariable Long id){
+        return jobService.DeleteById(id);
+    }
+
 
 }
